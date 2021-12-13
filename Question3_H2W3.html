@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 3 Homework 2 of week 3</title>
+    </head>
+    <body>
+        <p id="result1"> result1</p>
+        <p id="result2"> result2</p>
+        <script>
+            // Create an array of at least five Student objects with the following properties: name, activity, gender
+            //Filter all those students who are into swimming.
+            let userInput1 = prompt('enter an activity: ');
+            const myarray = [
+             {name: "elisabeth wood", activity: "soccer" , gender : "female"},
+             {name: "karen mad", activity: "tennis" , gender : "male"},
+             {name: "Assongou epiphanie", activity: "swimming" ,gender : "female"},
+             {name: "Kennedy Thonsom", activity: "gymnastic" ,gender : "female"},
+             {name: "stephanie barack", activity: "baseball" ,gender : "female"},
+             {name: "black levis", activity: "tennis" ,gender : "male"},
+             {name: "lucien kana", activity: "basketball" ,gender : "male"},
+             {name: "vanessa paradi", activity: "Baseball" ,gender : "female"},
+             {name: " belvanie Folefack", activity: "swimming", gender : "female"}
+            ];
+            let swim = myarray.filter(e => e.activity =='swimming');
+            swim = swim.map(e =>e.name)
+            document.getElementById("result1").innerHTML = swim;
+            let useract= myarray.filter(e => e.activity == userInput1);
+            useract = useract.map(e =>e.name)
+            document.getElementById("result2").innerHTML= useract;  
+            </script>
+            </body>
+            </html>

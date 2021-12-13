@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 4 Homework 2 of week 3</title>
+    </head>
+    <body>
+        <p id="result1"> result1</p>
+        <script>
+        let users = ["wonderwomen", "spiderman", "antman", "ironman"];
+        document.getElementById("result1").innerHTML = users.map(function(firstName, index){
+               let result = firstName + " is at " +  index + " position";
+               return result;
+          });
+            </script>
+            </body>
+            </html>

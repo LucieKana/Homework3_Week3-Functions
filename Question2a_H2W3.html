@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 2a Homework 2 of week 3</title>
+    </head>
+    <body>
+        <p id="result11"> </p>
+        <script>
+          let userInput1 = Number(prompt('enter a number: '));
+            // Create a function called celsiusToFahrenheit: Take a Celsius temperature from the user and convert it to Fahrenheit
+            //Return string as output: "SOMETHING degrees Celsius is Something degrees Fahrenheit"
+         function celsiusToFahrenheit(UserInput){
+            let result = UserInput * 1.8 + 32;
+                  return result ;
+                  //console.log(UserInput + " degree celsus is " + result + " degrees Fahrenheit");
+         }
+         let result= celsiusToFahrenheit(userInput1)
+         document.getElementById("result1").innerHTML = userInput1 + " degree celsius equal " + result + " degrees Fahrenheit"
+            </script>
+            </body>
+            </html>

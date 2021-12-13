@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 1 Homework 2 of week 3</title>
+    </head>
+    <body>
+        <p id="result1"> result1</p>
+        <script>
+        let userInput1 = Number(prompt('enter a number: '));
+        let userInput2 = Number(prompt('enter a number: '));
+        let userInput3 = Number(prompt('enter a number: '));
+
+         // Define a function maxOfThree that takes three numbers as arguments and returns the largest of them.
+         function maxOfThree(x,y,z){
+             if(x>y){
+                 if(x == z)
+                    return none
+                 if(x>z)
+                    return x + "is the largest number"
+                 else
+                    return y + " is the larges number"
+             }
+             else{
+                if(x==y)
+                  return none
+                
+              if(y>z)
+                  return y + " is the larges number"
+              else
+                  return z +  "is the larges number"
+            }
+
+         }
+         let largest = maxOfThree(userInput1, userInput2, userInput3)
+         document.getElementById("result1").innerHTML = largest
+            </script>
+            </body>
+            </html>
